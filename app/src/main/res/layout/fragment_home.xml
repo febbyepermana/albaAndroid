@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alba Football Club"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/te_judul"
+        android:textStyle="italic"/>
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"
+        android:layout_below="@+id/te_judul"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/te_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="'Keep training until you get it right'"
+        android:layout_below="@+id/img_logo"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"
+        />
+
+    <Button
+        android:id="@+id/btn_pemain"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Kelola Data Pemain"
+        android:layout_below="@+id/te_des"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/ic_account"
+        />
+
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btn_pemain"
+        android:layout_centerHorizontal="true"
+        android:text="Mulai Test"
+        android:drawableLeft="@drawable/ic_directions"/>
+
+    <Button
+        android:id="@+id/btn_hasil"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/btn_test"
+        android:layout_centerHorizontal="true"
+        android:text="Hasil Test"
+        android:drawableLeft="@drawable/ic_poll"/>
+
+
+
+</RelativeLayout>

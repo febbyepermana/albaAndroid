@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.TambahActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah Data Pemain"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Pemain"
+            android:textSize="20dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/et_tgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukan Tanggal Lahir" />
+
+        <Button
+            android:id="@+id/btn_tgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tanggal lahir"
+            android:onClick="tampilTanggal"
+            android:layout_marginLeft="55dp"/>
+
+    </LinearLayout>
+
+
+
+
+    
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_posisi"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Posisi Pemain"-->
+<!--            android:textSize="20dp" />-->
+
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_posisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posisi Pemain"
+            android:paddingTop="10dp"
+            android:paddingLeft="3dp"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/sp_posisi"
+            android:layout_marginLeft="99dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/array_posisi">
+
+        </Spinner>
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:layout_marginTop="30dp"/>
+
+
+</LinearLayout>

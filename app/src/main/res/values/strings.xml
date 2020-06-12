@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SportScience</string>
+
+    <string name="home">Home</string>
+    <string name="search">Kelola Pemain</string>
+    <string name="favorite">Test</string>
+    <string name="account">Lihat Hasil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="array_posisi">
+
+        <item>Penjaga Gawang</item>
+        <item>Belakang</item>
+        <item>Tengah</item>
+        <item>Depan</item>
+    </string-array>
+
+</resources>
